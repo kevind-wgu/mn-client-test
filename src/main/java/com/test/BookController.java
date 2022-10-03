@@ -6,13 +6,13 @@ import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import jakarta.inject.Inject;
 
-@Controller("/hello")
-public class HelloController {
+@Controller("/book")
+public class BookController {
     private final DirectBookClient directBookClient;
     private final MicronautBookClient mnBookClient;
 
     @Inject
-    public HelloController(DirectBookClient directBookClient, MicronautBookClient mnBookClient) {
+    public BookController(DirectBookClient directBookClient, MicronautBookClient mnBookClient) {
         this.directBookClient = directBookClient;
         this.mnBookClient = mnBookClient;
     }
