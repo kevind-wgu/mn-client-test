@@ -23,7 +23,7 @@ public class HelloController {
     }
 
     @Get("/micronaut")
-    public Book micronaut() {
+    public String micronaut() {
         return mnBookClient.getBook();
     }
 }

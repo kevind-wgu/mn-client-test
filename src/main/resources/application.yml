@@ -6,4 +6,4 @@ netty:
     allocator:
       max-order: 3
 
-bookUrl: "https://github.com/kevind-wgu/mn-client-test"
+bookUrl: "https://raw.githubusercontent.com/kevind-wgu/mn-client-test/main/books/book2.json"

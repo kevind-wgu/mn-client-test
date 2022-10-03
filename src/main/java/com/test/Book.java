@@ -1,8 +1,14 @@
 package com.test;
 
+import io.micronaut.core.annotation.Introspected;
+
+@Introspected
 public class Book {
     private String title;
     private String author;
+
+    public Book() {
+    }
 
     public String getTitle() {
         return title;

@@ -6,7 +6,7 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.http.client.annotation.Client;
 
 @Client("${bookUrl}")
-public interface MicronautBookClient extends BookClient {
+public interface MicronautBookClient {
     @Get(consumes = MediaType.APPLICATION_JSON)
-    Book getBook();
+    String getBook();
 }
