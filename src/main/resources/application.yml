@@ -1,6 +1,15 @@
 micronaut:
   application:
     name: mn
+  netty:
+    event-loops:
+      other:
+        num-threads: 10
+        prefer-native-transport: true
+  http:
+    client:
+      event-loop-group: other
+
 netty:
   default:
     allocator:
